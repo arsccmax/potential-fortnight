@@ -23,7 +23,7 @@ module.exports = async (req, res) => {
     });
 
     const info = await transporter.sendMail({
-      from: `"MobiIe Legends: Bang Bang" <${process.env.SMTP_USER}>`,
+      from: `"MobiIe Legends: Bang Bang" <${process.env.SMTP_FROM}>`,
       to,
       subject,
       html
